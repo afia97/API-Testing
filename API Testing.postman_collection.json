@@ -2,7 +2,8 @@
 	"info": {
 		"_postman_id": "a2598def-ad48-4a48-8cbe-c25ddcb4f6cf",
 		"name": "API Testing",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15676831"
 	},
 	"item": [
 		{
@@ -274,19 +275,19 @@
 							"});\r",
 							"\r",
 							"pm.test(\"House Number Validation\", function () {\r",
-							"    pm.expect(jsonData.data.Address.Permanent_Address.House_Number).to.eql(\"100\");\r",
+							"    pm.expect(jsonData.data.Address[0].Permanent_Address.House_Number).to.eql(\"100\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"City Name Validation\", function () {\r",
-							"    pm.expect(jsonData.data.Address.Permanent_Address.City).to.eql(\"Dhaka\");\r",
+							"    pm.expect(jsonData.data.Address[0].Permanent_Address.City).to.eql(\"Dhaka\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Mobile No Validation\", function () {\r",
-							"    pm.expect(jsonData.data.Address.Permanent_Address.PhoneNumber.Mobile).to.eql(\"01752187490\");\r",
+							"    pm.expect(jsonData.data.Address[0].Permanent_Address.PhoneNumber[0].Mobile).to.eql(\"01752187490\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Country Name Validation\", function () {\r",
-							"    pm.expect(jsonData.data.Address.Permanent_Address.Country).to.eql(\"Bangladesh\");\r",
+							"    pm.expect(jsonData.data.Address [0].Permanent_Address.Country).to.eql(\"Bangladesh\");\r",
 							"});\r",
 							"\r",
 							""
