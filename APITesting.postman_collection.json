@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "a2598def-ad48-4a48-8cbe-c25ddcb4f6cf",
-		"name": "API Testing",
+		"name": "APITesting",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "15676831"
 	},
@@ -30,7 +30,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"First Name Validation\", function () {\r",
-							"    pm.expect(jsonData.first_name).to.eql(\"test1\");\r",
+							"    pm.expect(jsonData.first_name).to.eql(\"Test1\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Middle Name Validation\", function () {\r",
@@ -38,7 +38,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Last Name Validation\", function () {\r",
-							"    pm.expect(jsonData.last_name).to.eql(\"Test3\");\r",
+							"    pm.expect(jsonData.last_name).to.eql(\"Test\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"DOB Validation\", function () {\r",
@@ -54,7 +54,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"first_name\": \"Test1\",\r\n    \"middle_name\": \"Test2\",\r\n    \"last_name\": null,\r\n    \"date_of_birth\": \"1th January, 1997\"\r\n}",
+					"raw": "{\r\n    \"first_name\": \"Test1\",\r\n    \"middle_name\": \"Test2\",\r\n    \"last_name\": \"Test\",\r\n    \"date_of_birth\": \"1th January, 1997\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -120,7 +120,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"ID Validation\", function () {\r",
-							"    pm.expect(jsonData.data.id).to.eql(2665516);\r",
+							"    pm.expect(jsonData.data.id).to.eql(2675072);\r",
 							"});\r",
 							"\r",
 							"pm.test(\"First Name Validation\", function () {\r",
@@ -132,11 +132,11 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Last Name Validation\", function () {\r",
-							"    pm.expect(jsonData.data.last_name).to.eql(\"Test3\");\r",
+							"    pm.expect(jsonData.data.last_name).to.eql(\"Test\");\r",
 							"});\r",
 							"\r",
 							"pm.test(\"DOB Validation\", function () {\r",
-							"    pm.expect(jsonData.data.date_of_birth).to.eql(\"1th February, 1997\");\r",
+							"    pm.expect(jsonData.data.date_of_birth).to.eql(\"1th January, 1990\");\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -190,7 +190,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": {{id}},\r\n    \"first_name\": \"Test1\",\r\n    \"middle_name\": \"test2\",\r\n    \"last_name\": \"Test3\",\r\n    \"date_of_birth\": \"1th January, 1990\"\r\n}",
+					"raw": "{\r\n    \"id\": {{id}},\r\n    \"first_name\": \"Test1\",\r\n    \"middle_name\": \"Test2\",\r\n    \"last_name\": \"Test\",\r\n    \"date_of_birth\": \"1th January, 1990\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -344,14 +344,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/api/studentsDetails/2665570",
+					"raw": "{{baseUrl}}/api/studentsDetails/2675069",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
 						"studentsDetails",
-						"2665570"
+						"2675069"
 					]
 				}
 			},
